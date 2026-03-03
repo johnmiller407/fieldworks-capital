@@ -19,18 +19,30 @@
     <nav class="nav-inner container">
       <a href="#hero" class="nav-logo">
         <svg class="logo-badge-svg" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M18 2 L34 9.5 L34 27 Q34 40.5 18 43.5 Q2 40.5 2 27 L2 9.5 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <!-- Topographic terrain lines inside shield -->
-          <path d="M6,33 Q9,27 12,30 Q15,33 18,24 Q21,15 24,20 Q27,25 30,23" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.6"/>
-          <path d="M6,36 Q10,31 13,34 Q16,37 18,29 Q20,21 23,26 Q26,31 30,28" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.35"/>
+          <!-- Two-bump park-service shield outline -->
+          <path d="M18,43 C31,37 35.5,28 35.5,20 C35.5,11 31,3.5 26,2 C23,1 20.5,4.5 18,6 C15.5,4.5 13,1 10,2 C5,3.5 0.5,11 0.5,20 C0.5,28 5,37 18,43Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <!-- Inner border -->
+          <path d="M18,41 C29.5,36 33.5,28 33.5,20.5 C33.5,13 29,6.5 25,5 C22.5,4 20.5,7 18,8.5 C15.5,7 13.5,4 11,5 C7,6.5 2.5,13 2.5,20.5 C2.5,28 6.5,36 18,41Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+          <!-- Mountain peak (innermost topo ring) -->
+          <ellipse cx="18" cy="19" rx="3" ry="2.2" fill="none" stroke="currentColor" stroke-width="0.7"/>
+          <!-- 2nd topo ring -->
+          <ellipse cx="18" cy="22" rx="6" ry="4" fill="none" stroke="currentColor" stroke-width="0.65"/>
+          <!-- 3rd topo ring -->
+          <ellipse cx="18" cy="26" rx="10" ry="5" fill="none" stroke="currentColor" stroke-width="0.6"/>
+          <!-- 4th topo ring / mountain base -->
+          <ellipse cx="18" cy="29" rx="13" ry="5.5" fill="none" stroke="currentColor" stroke-width="0.55"/>
+          <!-- Terrain lines -->
+          <path d="M3.5,36 Q10,35 18,35.5 Q26,35 32.5,36" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round"/>
+          <path d="M3.5,38 Q10,37 18,37.5 Q26,37 32.5,38" fill="none" stroke="currentColor" stroke-width="0.45" stroke-linecap="round"/>
+          <path d="M4,40 Q10.5,39 18,39.5 Q25.5,39 32,40" fill="none" stroke="currentColor" stroke-width="0.4" stroke-linecap="round"/>
         </svg>
         <span class="logo-name">Fieldworks Capital</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#strategy">Strategy</a></li>
-        <li><a href="#performance">Performance</a></li>
         <li><a href="#team">Team</a></li>
+        <li><a href="#performance">Performance</a></li>
         <li><a href="#contact" class="nav-cta">Investor Inquiry</a></li>
       </ul>
       <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -41,8 +53,8 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#strategy">Strategy</a></li>
-        <li><a href="#performance">Performance</a></li>
         <li><a href="#team">Team</a></li>
+        <li><a href="#performance">Performance</a></li>
         <li><a href="#contact">Investor Inquiry</a></li>
       </ul>
     </div>
@@ -88,27 +100,6 @@
         <div class="hero-actions fade-up">
           <a href="#contact" class="btn btn-primary">Request Information</a>
           <a href="#about" class="btn btn-ghost">Learn More</a>
-        </div>
-      </div>
-      <div class="hero-stats container fade-up">
-        <div class="hero-stat">
-          <span class="stat-value">$4.2B</span>
-          <span class="stat-label">Assets Under Management</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="stat-value">18.4%</span>
-          <span class="stat-label">Gross IRR (Inception)</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="stat-value">130+</span>
-          <span class="stat-label">Portfolio Properties</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="stat-value">22</span>
-          <span class="stat-label">Years of Experience</span>
         </div>
       </div>
       <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down">
@@ -284,158 +275,121 @@
     </section>
 
     <!-- =========================================================
-         PERFORMANCE
-    ========================================================= -->
-    <section class="section performance" id="performance">
-      <div class="container">
-        <div class="section-header fade-up">
-          <p class="section-eyebrow">Track Record</p>
-          <h2 class="section-headline">Consistent performance across cycles.</h2>
-          <p class="section-intro">Since inception, our funds have delivered top-quartile returns through disciplined underwriting and active asset management.</p>
-        </div>
-        <div class="perf-grid">
-          <div class="perf-card fade-up">
-            <div class="perf-fund-label">Fund I</div>
-            <div class="perf-year">2003 – 2010</div>
-            <div class="perf-stat">
-              <span class="perf-number">21.2%</span>
-              <span class="perf-metric">Gross IRR</span>
-            </div>
-            <div class="perf-stat secondary">
-              <span class="perf-number">2.4x</span>
-              <span class="perf-metric">Equity Multiple</span>
-            </div>
-            <div class="perf-bar-wrap">
-              <div class="perf-bar" style="--pct: 85%"></div>
-            </div>
-            <div class="perf-aum">$312M AUM · Fully Realized</div>
-          </div>
-          <div class="perf-card fade-up">
-            <div class="perf-fund-label">Fund II</div>
-            <div class="perf-year">2010 – 2018</div>
-            <div class="perf-stat">
-              <span class="perf-number">19.7%</span>
-              <span class="perf-metric">Gross IRR</span>
-            </div>
-            <div class="perf-stat secondary">
-              <span class="perf-number">2.2x</span>
-              <span class="perf-metric">Equity Multiple</span>
-            </div>
-            <div class="perf-bar-wrap">
-              <div class="perf-bar" style="--pct: 79%"></div>
-            </div>
-            <div class="perf-aum">$780M AUM · Fully Realized</div>
-          </div>
-          <div class="perf-card fade-up">
-            <div class="perf-fund-label">Fund III</div>
-            <div class="perf-year">2017 – 2024</div>
-            <div class="perf-stat">
-              <span class="perf-number">16.8%</span>
-              <span class="perf-metric">Gross IRR</span>
-            </div>
-            <div class="perf-stat secondary">
-              <span class="perf-number">1.9x</span>
-              <span class="perf-metric">Equity Multiple</span>
-            </div>
-            <div class="perf-bar-wrap">
-              <div class="perf-bar" style="--pct: 67%"></div>
-            </div>
-            <div class="perf-aum">$1.4B AUM · Substantially Realized</div>
-          </div>
-          <div class="perf-card current fade-up">
-            <div class="perf-fund-label">Fund IV</div>
-            <div class="perf-year">2023 – Present</div>
-            <div class="perf-stat">
-              <span class="perf-number">14.1%</span>
-              <span class="perf-metric">Gross IRR (to date)</span>
-            </div>
-            <div class="perf-stat secondary">
-              <span class="perf-number">1.3x</span>
-              <span class="perf-metric">Equity Multiple</span>
-            </div>
-            <div class="perf-bar-wrap">
-              <div class="perf-bar" style="--pct: 56%"></div>
-            </div>
-            <div class="perf-aum">$1.7B AUM · Open for Investment</div>
-            <div class="perf-badge">Accepting Capital</div>
-          </div>
-        </div>
-        <p class="perf-disclaimer fade-up">
-          Past performance is not indicative of future results. Returns shown are gross of management fees and carried interest. Net returns will be lower. This information is for qualified institutional and accredited investors only and does not constitute an offer to sell or solicitation to buy any securities.
-        </p>
-      </div>
-    </section>
-
-    <!-- =========================================================
          TEAM
     ========================================================= -->
     <section class="section team" id="team">
       <div class="container">
         <div class="section-header fade-up">
-          <p class="section-eyebrow">Leadership</p>
-          <h2 class="section-headline">Experienced across every market cycle.</h2>
-          <p class="section-intro">Our senior team brings decades of combined experience in acquisitions, development, capital markets, and asset management.</p>
+          <p class="section-eyebrow">The Team</p>
+          <h2 class="section-headline">Experienced across cycles and asset classes.</h2>
+          <p class="section-intro">Our investment professionals bring decades of combined expertise in acquisitions, asset management, and capital markets — united by a shared commitment to disciplined underwriting and long-term value creation.</p>
         </div>
         <div class="team-grid">
           <div class="team-card fade-up">
-            <div class="team-avatar">
-              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="40" cy="40" r="40" fill="#2b3a1c"/>
-                <circle cx="40" cy="30" r="13" fill="#3d5228"/>
-                <ellipse cx="40" cy="68" rx="22" ry="14" fill="#3d5228"/>
-              </svg>
-            </div>
             <div class="team-info">
-              <h3>James R. Whitfield</h3>
-              <p class="team-title">Founder &amp; Managing Partner</p>
-              <p class="team-bio">30+ years in institutional real estate. Previously Head of Real Estate at Morgan Stanley Investment Management. Columbia Business School, MBA.</p>
+              <p class="team-title">Acquisitions &amp; Underwriting</p>
+              <p class="team-bio">Our acquisitions team sources and underwrites investments across all four target property types. Deep market relationships and proprietary deal flow enable off-market transaction access in primary and secondary markets.</p>
             </div>
           </div>
           <div class="team-card fade-up">
-            <div class="team-avatar">
-              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="40" cy="40" r="40" fill="#2b3a1c"/>
-                <circle cx="40" cy="30" r="13" fill="#3d5228"/>
-                <ellipse cx="40" cy="68" rx="22" ry="14" fill="#3d5228"/>
-              </svg>
-            </div>
             <div class="team-info">
-              <h3>Sarah K. Okonkwo</h3>
-              <p class="team-title">Partner, Acquisitions</p>
-              <p class="team-bio">25 years specializing in multifamily and industrial transactions across major US markets. Former SVP at Blackstone Real Estate. Harvard Kennedy School, MPA.</p>
+              <p class="team-title">Asset Management &amp; Operations</p>
+              <p class="team-bio">In-house asset management professionals oversee property operations, capital improvement programs, leasing strategy, and disposition planning — driving value creation at every stage of the hold period.</p>
             </div>
           </div>
           <div class="team-card fade-up">
-            <div class="team-avatar">
-              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="40" cy="40" r="40" fill="#2b3a1c"/>
-                <circle cx="40" cy="30" r="13" fill="#3d5228"/>
-                <ellipse cx="40" cy="68" rx="22" ry="14" fill="#3d5228"/>
-              </svg>
-            </div>
             <div class="team-info">
-              <h3>Marcus T. Delacroix</h3>
-              <p class="team-title">Partner, Capital Markets</p>
-              <p class="team-bio">Expert in LP relations, fund structuring, and debt placement. Prior roles at Goldman Sachs Real Estate Finance and JPMorgan. Wharton, BS Finance.</p>
-            </div>
-          </div>
-          <div class="team-card fade-up">
-            <div class="team-avatar">
-              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="40" cy="40" r="40" fill="#2b3a1c"/>
-                <circle cx="40" cy="30" r="13" fill="#3d5228"/>
-                <ellipse cx="40" cy="68" rx="22" ry="14" fill="#3d5228"/>
-              </svg>
-            </div>
-            <div class="team-info">
-              <h3>Elena V. Castillo</h3>
-              <p class="team-title">Managing Director, Asset Management</p>
-              <p class="team-bio">Oversees portfolio operations, ESG initiatives, and value creation programs across 130+ properties. CBRE alum. MIT, MS Real Estate Development.</p>
+              <p class="team-title">Capital Markets &amp; Investor Relations</p>
+              <p class="team-bio">Our capital markets group manages LP relationships, fund structuring, debt placement, and investor reporting. We are committed to transparent communication and rigorous governance for all fund investors.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- =========================================================
+         PERFORMANCE
+    ========================================================= -->
+    <section class="section performance" id="performance">
+      <div class="container">
+        <div class="section-header fade-up">
+          <p class="section-eyebrow">Investment Objectives</p>
+          <h2 class="section-headline">Return targets by strategy.</h2>
+          <p class="section-intro">Each investment strategy carries a defined return objective shaped by asset risk profile, leverage, and hold period. All figures represent targets, not guarantees of future results.</p>
+        </div>
+        <div class="perf-grid">
+          <div class="perf-card fade-up">
+            <div class="perf-fund-label">Core Income</div>
+            <div class="perf-year">3–5 Year Hold</div>
+            <div class="perf-stat">
+              <span class="perf-number">7–9%</span>
+              <span class="perf-metric">Target Net IRR</span>
+            </div>
+            <div class="perf-stat secondary">
+              <span class="perf-number">1.4–1.6x</span>
+              <span class="perf-metric">Equity Multiple</span>
+            </div>
+            <div class="perf-bar-wrap">
+              <div class="perf-bar" style="--pct: 38%"></div>
+            </div>
+            <div class="perf-aum">Stabilized, Income-Producing Assets</div>
+          </div>
+          <div class="perf-card fade-up">
+            <div class="perf-fund-label">Core Plus</div>
+            <div class="perf-year">4–6 Year Hold</div>
+            <div class="perf-stat">
+              <span class="perf-number">9–12%</span>
+              <span class="perf-metric">Target Net IRR</span>
+            </div>
+            <div class="perf-stat secondary">
+              <span class="perf-number">1.6–1.9x</span>
+              <span class="perf-metric">Equity Multiple</span>
+            </div>
+            <div class="perf-bar-wrap">
+              <div class="perf-bar" style="--pct: 52%"></div>
+            </div>
+            <div class="perf-aum">Light Value-Add, Strong In-Place Cash Flow</div>
+          </div>
+          <div class="perf-card fade-up">
+            <div class="perf-fund-label">Value-Add</div>
+            <div class="perf-year">5–7 Year Hold</div>
+            <div class="perf-stat">
+              <span class="perf-number">12–15%</span>
+              <span class="perf-metric">Target Net IRR</span>
+            </div>
+            <div class="perf-stat secondary">
+              <span class="perf-number">1.8–2.2x</span>
+              <span class="perf-metric">Equity Multiple</span>
+            </div>
+            <div class="perf-bar-wrap">
+              <div class="perf-bar" style="--pct: 67%"></div>
+            </div>
+            <div class="perf-aum">Repositioning, Lease-Up, Renovation</div>
+          </div>
+          <div class="perf-card current fade-up">
+            <div class="perf-fund-label">Opportunistic</div>
+            <div class="perf-year">6–10 Year Hold</div>
+            <div class="perf-stat">
+              <span class="perf-number">15–18%</span>
+              <span class="perf-metric">Target Net IRR</span>
+            </div>
+            <div class="perf-stat secondary">
+              <span class="perf-number">2.0–2.5x</span>
+              <span class="perf-metric">Equity Multiple</span>
+            </div>
+            <div class="perf-bar-wrap">
+              <div class="perf-bar" style="--pct: 82%"></div>
+            </div>
+            <div class="perf-aum">Development, Land, Distressed Assets</div>
+            <div class="perf-badge">Current Focus</div>
+          </div>
+        </div>
+        <p class="perf-disclaimer fade-up">
+          All return targets are forward-looking projections and are not guarantees of future results. Actual returns will vary based on market conditions, asset performance, leverage, fees, and other factors. Net returns are stated after management fees and carried interest. This information is for qualified institutional and accredited investors only and does not constitute an offer to sell or solicitation to buy any securities.
+        </p>
+      </div>
+    </section>
+
 
     <!-- =========================================================
          CONTACT
@@ -455,7 +409,7 @@
             </div>
             <div class="contact-detail-item">
               <span class="contact-detail-label">Investor Relations</span>
-              <span>ir@fieldworks.capital</span>
+              <span>john@fieldworkscapital.com</span>
             </div>
           </div>
         </div>
@@ -528,9 +482,22 @@
       <div class="footer-brand">
         <a href="#hero" class="nav-logo">
           <svg class="logo-badge-svg" viewBox="0 0 36 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M18 2 L34 9.5 L34 27 Q34 40.5 18 43.5 Q2 40.5 2 27 L2 9.5 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M6,33 Q9,27 12,30 Q15,33 18,24 Q21,15 24,20 Q27,25 30,23" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.6"/>
-            <path d="M6,36 Q10,31 13,34 Q16,37 18,29 Q20,21 23,26 Q26,31 30,28" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.35"/>
+            <!-- Two-bump park-service shield outline -->
+            <path d="M18,43 C31,37 35.5,28 35.5,20 C35.5,11 31,3.5 26,2 C23,1 20.5,4.5 18,6 C15.5,4.5 13,1 10,2 C5,3.5 0.5,11 0.5,20 C0.5,28 5,37 18,43Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+            <!-- Inner border -->
+            <path d="M18,41 C29.5,36 33.5,28 33.5,20.5 C33.5,13 29,6.5 25,5 C22.5,4 20.5,7 18,8.5 C15.5,7 13.5,4 11,5 C7,6.5 2.5,13 2.5,20.5 C2.5,28 6.5,36 18,41Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            <!-- Mountain peak (innermost topo ring) -->
+            <ellipse cx="18" cy="19" rx="3" ry="2.2" fill="none" stroke="currentColor" stroke-width="0.7"/>
+            <!-- 2nd topo ring -->
+            <ellipse cx="18" cy="22" rx="6" ry="4" fill="none" stroke="currentColor" stroke-width="0.65"/>
+            <!-- 3rd topo ring -->
+            <ellipse cx="18" cy="26" rx="10" ry="5" fill="none" stroke="currentColor" stroke-width="0.6"/>
+            <!-- 4th topo ring / mountain base -->
+            <ellipse cx="18" cy="29" rx="13" ry="5.5" fill="none" stroke="currentColor" stroke-width="0.55"/>
+            <!-- Terrain lines -->
+            <path d="M3.5,36 Q10,35 18,35.5 Q26,35 32.5,36" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round"/>
+            <path d="M3.5,38 Q10,37 18,37.5 Q26,37 32.5,38" fill="none" stroke="currentColor" stroke-width="0.45" stroke-linecap="round"/>
+            <path d="M4,40 Q10.5,39 18,39.5 Q25.5,39 32,40" fill="none" stroke="currentColor" stroke-width="0.4" stroke-linecap="round"/>
           </svg>
           <span class="logo-name">Fieldworks Capital</span>
         </a>
@@ -540,8 +507,8 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#strategy">Strategy</a></li>
-          <li><a href="#performance">Performance</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#performance">Performance</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>

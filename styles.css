@@ -112,8 +112,8 @@ input, select, textarea { font: inherit; }
 
 /* Shield badge mark */
 .logo-badge-svg {
-  width: 32px;
-  height: 38px;
+  width: 36px;
+  height: 44px;
   color: var(--sand);
   flex-shrink: 0;
 }

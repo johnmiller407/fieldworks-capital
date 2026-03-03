@@ -164,19 +164,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       return;
     }
 
-    // Simulate async submission
     const submitBtn = form.querySelector('[type="submit"]');
     submitBtn.textContent = 'Submitting…';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      form.reset();
+    fetch('https://formspree.io/f/xdalrqjb', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+    .then(res => {
+      if (res.ok) {
+        form.reset();
+        successEl.style.color = 'var(--gold)';
+        successEl.textContent = 'Thank you. A member of our investor relations team will be in touch within two business days.';
+        setTimeout(() => { successEl.textContent = ''; }, 8000);
+      } else {
+        successEl.style.color = 'rgba(220,80,80,0.9)';
+        successEl.textContent = 'Something went wrong. Please try again or email us directly.';
+      }
+    })
+    .catch(() => {
+      successEl.style.color = 'rgba(220,80,80,0.9)';
+      successEl.textContent = 'Something went wrong. Please try again or email us directly.';
+    })
+    .finally(() => {
       submitBtn.textContent = 'Submit Inquiry';
       submitBtn.disabled = false;
-      successEl.style.color = 'var(--gold)';
-      successEl.textContent = 'Thank you. A member of our investor relations team will be in touch within two business days.';
-      setTimeout(() => { successEl.textContent = ''; }, 8000);
-    }, 1200);
+    });
   });
 
   // Clear error highlight on input
